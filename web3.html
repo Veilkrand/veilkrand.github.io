@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<script>
+
+window.addEventListener('load', function() {
+
+  if (typeof web3 !== 'undefined') {
+        console.log('Web3 not ready')
+    } else {
+        console.log('Web3 Ready!'
+    }
+
+   web3.eth.defaultAccount = web3.eth.accounts[0];
+   console.log(web3.eth.defaultAccount)
+
+
+})
+
+</script>
+
+
+</html>
